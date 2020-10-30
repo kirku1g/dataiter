@@ -1,0 +1,21 @@
+# cython: language_level=3, boundscheck=False
+cimport numpy as np
+
+cdef as_array(obj, dtype)
+cdef bytes as_bytes(const np.uint8_t[:] array)
+cpdef as_dtype(data, dtype)
+cpdef as_int(obj)
+cpdef as_sequence(obj, ignore=?)
+cpdef byte_size(data)
+cpdef bint dtype_uint8(dtype)
+cpdef get_dtype(obj)
+cpdef Py_ssize_t get_itemsize(data)
+cpdef bint is_array(obj)
+cpdef bint is_array_like(obj)
+cpdef bint is_bytes(obj)
+cpdef bint is_data(obj)
+cpdef bint is_data_iterable(obj)
+cpdef bint is_iterator(obj)
+cpdef bint is_memoryview(obj)
+cpdef bint is_split(obj)
+cpdef view_dtype(data, dtype)
